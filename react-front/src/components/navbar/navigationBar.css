@@ -1,0 +1,19 @@
+.navigationBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #E53E3E;
+    font-weight: bold;
+    font-family: Nerko_One, sans-serif;
+}
+
+.buttons {
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,17 @@
+.book-container {
+    margin-top: 5rem;
+}
+
+.card {
+    width: 364px;
+    min-height: 622px;
+}
+
+.alert {
+    width: fit-content;
+    background-color: #b491c8;
+    color: #663a82;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+}

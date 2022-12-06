@@ -1,4 +1,4 @@
-# Blog de Libros - Spring Boot 3 y React 18
+# Blog de Libros - Spring Boot 3 y React 18 - By @Sebas2409 & @VictorsgDev
 
 - Arquitectura Hexagonal
 - Docker

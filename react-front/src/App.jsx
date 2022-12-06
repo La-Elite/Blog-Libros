@@ -25,7 +25,7 @@ function App() {
             }
         }).then(r => r.json())
             .then(d => createArray(d))
-    }, [rId])
+    }, [rId, show])
 
     const createArray = d => {
         setData(d)
@@ -35,7 +35,6 @@ function App() {
         stompClient.connect({}, function (frame) {
             stompClient.subscribe('/topic/mensaje', function (message) {
                 let respuesta = JSON.parse(message.body)
-                console.log(respuesta)
                 let id = respuesta.bookIsbn
                 setRId(id)
                 setShow(true)
@@ -44,7 +43,7 @@ function App() {
                 }, 5000)
             })
         })
-    })
+    }, [])
 
     const handleMessage = (msg, id, user) => {
         stompClient.send('/app/receive', {},
